@@ -1,0 +1,26 @@
+{
+  "name": "denji-ems-backend",
+  "version": "1.0.0",
+  "description": "Employee Management System backend (Express/MongoDB)",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "seed": "node seed.js",
+    "check:db": "node scripts/checkDb.js"
+  },
+  "author": "denji77",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "bcryptjs": "^2.4.3",
+    "ioredis": "^5.4.2",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.5.11",
+    "mongoose-auto-increment": "^5.0.1"
+  }
+}
