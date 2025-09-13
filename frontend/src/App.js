@@ -1,24 +1,31 @@
 import React, { Component } from "react";
-import "./App.css";
+import { HashRouter as Router, Route, Link, Redirect, DefaultRoute } from "react-router-dom";
+import { Switch } from "react-router";
 import axios from "axios";
 import jwt from "jsonwebtoken";
 
+// Components
 import Login from "./component/Login.jsx";
 import Temp from "./component/Temp.jsx";
 import NotFound404 from "./component/NotFound404.jsx";
 import DashboardAdmin from "./component/admin/DashboardAdmin.jsx";
 import DashboardHR from "./component/hr/DashboardHR.jsx";
 import DashboardEmployee from "./component/employee/DashboardEmployee.jsx";
-import { Switch } from "react-router";
-
-import {
-  HashRouter as Router,
-  Route,
-  Link,
-  Redirect,
-  DefaultRoute
-} from "react-router-dom";
 import history from "./history.js";
+
+// Styles
+import "./App.css";
+
+// Configure axios to always include the auth token
+axios.interceptors.request.use(function (config) {
+  const token = localStorage.getItem('token');
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  return config;
+}, function (error) {
+  return Promise.reject(error);
+});
 
 class App extends Component {
   state = {
@@ -187,8 +194,8 @@ class App extends Component {
     //email=admin@gmail.com&password=admin
 
     let bodyLogin = {
-      email: id,
-      password: pass
+      Email: id,
+      Password: pass
     };
     // let bodyLogin ="email="+id+"&password="+pass;
     // {Email: id, Password: pass}
@@ -196,26 +203,20 @@ class App extends Component {
     axios
       .post("http://localhost:4000/api/login", bodyLogin)
       .then(res => {
-        // console.log(decodedData.Account);
-        console.log(jwt.decode(res.data));
-        var decodedData = jwt.decode(res.data);
-        localStorage.setItem("token", res.data);
+        console.log('Login response:', res.data);
+        const { token } = res.data;
+        var decodedData = jwt.decode(token);
+        localStorage.setItem("token", token);
 
         if (
-          (res == undefined ||
-            res == null ||
-            decodedData.Account == undefined ||
-            decodedData.Account == null) &&
-          !(
-            decodedData.Account == 1 ||
-            decodedData.Account == 2 ||
-            decodedData.Account == 3
-          )
+          !decodedData || 
+          !decodedData.Account ||
+          ![1, 2, 3].includes(decodedData.Account)
         ) {
           this.setState({ pass: false });
           this.setState({ loading: false });
         } else {
-          if (decodedData.Account == 1) {
+          if (decodedData.Account === 1) {
             // this.setState({ data: decodedData });
             // localStorage.setItem('data', JSON.stringfy(decodedData));
 
@@ -238,7 +239,7 @@ class App extends Component {
             this.componentDidMount();
             history.push("#/admin/role");
           }
-          if (decodedData.Account == 2) {
+          if (decodedData.Account === 2) {
             // this.setState({ data: decodedData });
 
             this.setState({ pass: true });
@@ -256,7 +257,7 @@ class App extends Component {
 
             history.push("#/hr/employee");
           }
-          if (decodedData.Account == 3) {
+          if (decodedData.Account === 3) {
             // this.setState({ data: decodedData });
 
             this.setState({ pass: true });

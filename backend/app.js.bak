@@ -1,0 +1,50 @@
+require("dotenv").config();
+var cors = require('cors')
+
+var express = require("express"),
+  mongoose = require("mongoose"),
+  autoIncrement = require("mongoose-auto-increment"),
+  Joi = require("joi"),
+  app = express();
+  app.use(cors())
+  
+jwt = require("jsonwebtoken");
+const bcrypt = require('bcryptjs');
+const { mongoUri, jwtKey } = require('./config');
+const { verifyAdmin, verifyAdminHR, verifyHR, verifyHREmployee, verifyEmployee } = require('./middleware/auth');
+const notificationRoutes = require('./notification-routes');
+const leaveRoutes = require('./leave-routes');
+
+// Use route handlers
+app.use(notificationRoutes);
+app.use(leaveRoutes);
+
+//connecting to mongodb
+let mongoURI = mongoUri;
+app.use(function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+  );
+  next();
+});
+
+mongoose.set("useNewUrlParser", true);
+mongoose.set("useFindAndModify", false);
+
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => {
+    console.log(`Backend server is running on port ${PORT}`);
+    console.log(`API endpoint: http://localhost:${PORT}/api`);
+});
+
+mongoose
+  .connect(mongoURI)
+  .then(() => {
+    console.log("db connection successful");
+  })
+  .catch(err => {
+    console.log("db connection failed");
+  });

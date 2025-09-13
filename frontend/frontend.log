@@ -1,0 +1,295 @@
+
+> denji-ems-frontend@0.1.0 start
+> react-scripts start
+
+[34mℹ[39m [90m｢wds｣[39m: Project is running at http://10.227.11.140/
+[34mℹ[39m [90m｢wds｣[39m: webpack output is served from 
+[34mℹ[39m [90m｢wds｣[39m: Content not from webpack is served from /app/frontend/public
+[34mℹ[39m [90m｢wds｣[39m: 404s will fallback to /
+Fast Refresh requires React 16.10 or higher. You are using React 16.8.6.
+Starting the development server...
+
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+Compiled with warnings.
+
+src/App.js
+  Line 7:8:     'Temp' is defined but never used          no-unused-vars
+  Line 8:8:     'NotFound404' is defined but never used   no-unused-vars
+  Line 17:3:    'Link' is defined but never used          no-unused-vars
+  Line 19:3:    'DefaultRoute' is defined but never used  no-unused-vars
+  Line 38:48:   Expected '===' and instead saw '=='       eqeqeq
+  Line 92:42:   Expected '===' and instead saw '=='       eqeqeq
+  Line 97:44:   Expected '===' and instead saw '=='       eqeqeq
+  Line 101:46:  Expected '===' and instead saw '=='       eqeqeq
+  Line 117:42:  Expected '===' and instead saw '=='       eqeqeq
+  Line 131:42:  Expected '===' and instead saw '=='       eqeqeq
+  Line 145:42:  Expected '===' and instead saw '=='       eqeqeq
+  Line 205:16:  Expected '===' and instead saw '=='       eqeqeq
+  Line 207:33:  Expected '===' and instead saw '=='       eqeqeq
+  Line 210:33:  Expected '===' and instead saw '=='       eqeqeq
+  Line 211:33:  Expected '===' and instead saw '=='       eqeqeq
+  Line 212:33:  Expected '===' and instead saw '=='       eqeqeq
+  Line 218:35:  Expected '===' and instead saw '=='       eqeqeq
+  Line 241:35:  Expected '===' and instead saw '=='       eqeqeq
+  Line 259:35:  Expected '===' and instead saw '=='       eqeqeq
+
+src/component/CityForm.jsx
+  Line 55:41:  Expected '===' and instead saw '=='  eqeqeq
+
+src/component/CityFormEdit.jsx
+  Line 3:24:    'Router' is defined but never used   no-unused-vars
+  Line 3:32:    'Route' is defined but never used    no-unused-vars
+  Line 3:39:    'Link' is defined but never used     no-unused-vars
+  Line 57:41:   Expected '===' and instead saw '=='  eqeqeq
+  Line 63:65:   Expected '===' and instead saw '=='  eqeqeq
+  Line 109:64:  Expected '===' and instead saw '=='  eqeqeq
+
+src/component/CityTable.jsx
+  Line 92:31:   Array.prototype.map() expects a return value from arrow function  array-callback-return
+  Line 112:65:  Expected '===' and instead saw '=='                               eqeqeq
+  Line 125:35:  Expected '===' and instead saw '=='                               eqeqeq
+
+src/component/CompanyForm.jsx
+  Line 69:41:  Expected '===' and instead saw '=='  eqeqeq
+  Line 79:39:  Expected '===' and instead saw '=='  eqeqeq
+
+src/component/CompanyFormEdit.jsx
+  Line 116:41:  Expected '===' and instead saw '=='  eqeqeq
+  Line 125:39:  Expected '===' and instead saw '=='  eqeqeq
+
+src/component/CompanyTable.jsx
+  Line 169:34:  Array.prototype.map() expects a return value from arrow function  array-callback-return
+  Line 202:64:  Expected '===' and instead saw '=='                               eqeqeq
+
+src/component/CountryForm.jsx
+  Line 3:24:  'Router' is defined but never used  no-unused-vars
+  Line 3:32:  'Route' is defined but never used   no-unused-vars
+  Line 3:39:  'Link' is defined but never used    no-unused-vars
+
+src/component/CountryFormEdit.jsx
+  Line 3:24:  'Router' is defined but never used  no-unused-vars
+  Line 3:32:  'Route' is defined but never used   no-unused-vars
+  Line 3:39:  'Link' is defined but never used    no-unused-vars
+
+src/component/CountryTable.jsx
+  Line 82:34:   Array.prototype.map() expects a return value from arrow function  array-callback-return
+  Line 100:65:  Expected '===' and instead saw '=='                               eqeqeq
+  Line 113:35:  Expected '===' and instead saw '=='                               eqeqeq
+
+src/component/DepartmentFormEdit.jsx
+  Line 68:66:  Expected '===' and instead saw '=='  eqeqeq
+
+src/component/DepartmentTable.jsx
+  Line 92:37:   Array.prototype.map() expects a return value from arrow function  array-callback-return
+  Line 112:65:  Expected '===' and instead saw '=='                               eqeqeq
+  Line 125:35:  Expected '===' and instead saw '=='                               eqeqeq
+
+src/component/EmployeeFormEdit.jsx
+  Line 169:62:  Expected '===' and instead saw '=='  eqeqeq
+  Line 175:62:  Expected '===' and instead saw '=='  eqeqeq
+  Line 181:62:  Expected '===' and instead saw '=='  eqeqeq
+  Line 203:63:  Expected '===' and instead saw '=='  eqeqeq
+  Line 224:50:  Expected '===' and instead saw '=='  eqeqeq
+  Line 234:50:  Expected '===' and instead saw '=='  eqeqeq
+  Line 339:69:  Expected '===' and instead saw '=='  eqeqeq
+  Line 364:67:  Expected '===' and instead saw '=='  eqeqeq
+
+src/component/EmployeeInfo.jsx
+  Line 3:10:  'Form' is defined but never used    no-unused-vars
+  Line 3:24:  'Col' is defined but never used     no-unused-vars
+  Line 3:29:  'Row' is defined but never used     no-unused-vars
+  Line 4:24:  'Router' is defined but never used  no-unused-vars
+  Line 4:32:  'Route' is defined but never used   no-unused-vars
+
+src/component/EmployeeTable.jsx
+  Line 86:9:     Duplicate key 'filter'                                            no-dupe-keys
+  Line 200:35:   Array.prototype.map() expects a return value from arrow function  array-callback-return
+  Line 205:38:   Expected '===' and instead saw '=='                               eqeqeq
+  Line 205:72:   Expected '===' and instead saw '=='                               eqeqeq
+  Line 205:103:  Expected '===' and instead saw '=='                               eqeqeq
+  Line 229:64:   Expected '===' and instead saw '=='                               eqeqeq
+
+src/component/NavBar.jsx
+  Line 58:15:  The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
+  Line 63:15:  The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md  jsx-a11y/anchor-is-valid
+
+src/component/PositionFormEdit.jsx
+  Line 3:24:   'Router' is defined but never used   no-unused-vars
+  Line 3:32:   'Route' is defined but never used    no-unused-vars
+  Line 3:39:   'Link' is defined but never used     no-unused-vars
+  Line 73:66:  Expected '===' and instead saw '=='  eqeqeq
+
+src/component/PositionTable.jsx
+  Line 92:35:   Array.prototype.map() expects a return value from arrow function  array-callback-return
+  Line 111:65:  Expected '===' and instead saw '=='                               eqeqeq
+  Line 124:35:  Expected '===' and instead saw '=='                               eqeqeq
+
+src/component/RoleFormEdit.jsx
+  Line 62:66:  Expected '===' and instead saw '=='  eqeqeq
+
+src/component/RoleTable.jsx
+  Line 93:31:   Array.prototype.map() expects a return value from arrow function  array-callback-return
+  Line 112:65:  Expected '===' and instead saw '=='                               eqeqeq
+  Line 125:33:  Expected '===' and instead saw '=='                               eqeqeq
+
+src/component/Salary.jsx
+  Line 42:35:   Expected '===' and instead saw '=='  eqeqeq
+  Line 91:33:   Expected '===' and instead saw '=='  eqeqeq
+  Line 118:33:  Expected '===' and instead saw '=='  eqeqeq
+
+src/component/SalaryFormEdit.jsx
+  Line 98:58:  Expected '===' and instead saw '=='  eqeqeq
+
+src/component/SalaryTable.jsx
+  Line 129:33:  Array.prototype.map() expects a return value from arrow function  array-callback-return
+  Line 156:64:  Expected '===' and instead saw '=='                               eqeqeq
+
+src/component/StateFormEdit.jsx
+  Line 57:66:  Expected '===' and instead saw '=='  eqeqeq
+
+src/component/StateTable.jsx
+  Line 4:24:    'Router' is defined but never used                                no-unused-vars
+  Line 4:32:    'Route' is defined but never used                                 no-unused-vars
+  Line 4:39:    'Link' is defined but never used                                  no-unused-vars
+  Line 97:32:   Array.prototype.map() expects a return value from arrow function  array-callback-return
+  Line 117:65:  Expected '===' and instead saw '=='                               eqeqeq
+  Line 130:33:  Expected '===' and instead saw '=='                               eqeqeq
+
+src/component/admin/AdminPortalFormEdit.jsx
+  Line 57:35:  Expected '===' and instead saw '=='  eqeqeq
+  Line 67:37:  Expected '===' and instead saw '=='  eqeqeq
+
+src/component/admin/AdminPortalTable.jsx
+  Line 92:33:  Array.prototype.map() expects a return value from arrow function  array-callback-return
+  Line 96:36:  Expected '===' and instead saw '=='                               eqeqeq
+  Line 114:9:  Expected '===' and instead saw '=='                               eqeqeq
+
+src/component/admin/AdminProjectBidForm.jsx
+  Line 4:24:   'Router' is defined but never used   no-unused-vars
+  Line 4:32:   'Route' is defined but never used    no-unused-vars
+  Line 4:39:   'Link' is defined but never used     no-unused-vars
+  Line 29:75:  Expected '===' and instead saw '=='  eqeqeq
+
+src/component/admin/AdminProjectBidFormEdit.jsx
+  Line 64:77:   Expected '===' and instead saw '=='  eqeqeq
+  Line 121:63:  Expected '===' and instead saw '=='  eqeqeq
+  Line 159:53:  Expected '===' and instead saw '=='  eqeqeq
+  Line 161:79:  Expected '===' and instead saw '=='  eqeqeq
+  Line 162:79:  Expected '===' and instead saw '=='  eqeqeq
+  Line 173:75:  Expected '===' and instead saw '=='  eqeqeq
+  Line 174:75:  Expected '===' and instead saw '=='  eqeqeq
+  Line 175:75:  Expected '===' and instead saw '=='  eqeqeq
+  Line 176:75:  Expected '===' and instead saw '=='  eqeqeq
+
+src/component/admin/AdminProjectBidTable.jsx
+  Line 133:37:  Array.prototype.map() expects a return value from arrow function  array-callback-return
+  Line 156:64:  Expected '===' and instead saw '=='                               eqeqeq
+
+src/component/admin/DashboardAdmin.jsx
+  Line 5:10:   'Redirect' is defined but never used   no-unused-vars
+  Line 30:10:  'RoleFormF' is defined but never used  no-unused-vars
+  Line 58:26:  Expected '===' and instead saw '=='    eqeqeq
+
+src/component/employee/DashboardEmployee.jsx
+  Line 5:10:   'Redirect' is defined but never used  no-unused-vars
+  Line 38:26:  Expected '===' and instead saw '=='   eqeqeq
+
+src/component/employee/EducationForm.jsx
+  Line 4:8:  'axios' is defined but never used  no-unused-vars
+
+src/component/employee/EducationFormEdit.jsx
+  Line 5:8:  'axios' is defined but never used  no-unused-vars
+
+src/component/employee/EducationTable.jsx
+  Line 109:46:  Array.prototype.map() expects a return value from arrow function  array-callback-return
+  Line 130:64:  Expected '===' and instead saw '=='                               eqeqeq
+
+src/component/employee/FamilyInfoForm.jsx
+  Line 4:8:  'axios' is defined but never used  no-unused-vars
+
+src/component/employee/FamilyInfoFormEdit.jsx
+  Line 5:8:  'axios' is defined but never used  no-unused-vars
+
+src/component/employee/FamilyInfoTable.jsx
+  Line 110:48:  Array.prototype.map() expects a return value from arrow function  array-callback-return
+  Line 131:64:  Expected '===' and instead saw '=='                               eqeqeq
+
+src/component/employee/LeaveApplicationEmpForm.jsx
+  Line 4:8:  'axios' is defined but never used  no-unused-vars
+
+src/component/employee/LeaveApplicationEmpFormEdit.jsx
+  Line 5:8:    'axios' is defined but never used    no-unused-vars
+  Line 61:76:  Expected '===' and instead saw '=='  eqeqeq
+  Line 62:78:  Expected '===' and instead saw '=='  eqeqeq
+  Line 63:81:  Expected '===' and instead saw '=='  eqeqeq
+
+src/component/employee/LeaveApplicationEmpTable.jsx
+  Line 119:63:  Array.prototype.map() expects a return value from arrow function  array-callback-return
+  Line 141:64:  Expected '===' and instead saw '=='                               eqeqeq
+  Line 184:11:  Expected '===' and instead saw '=='                               eqeqeq
+  Line 187:11:  Expected '===' and instead saw '=='                               eqeqeq
+  Line 190:11:  Expected '===' and instead saw '=='                               eqeqeq
+  Line 195:24:  Expected '===' and instead saw '=='                               eqeqeq
+
+src/component/employee/PersonalInfoFormEdit.jsx
+  Line 3:8:     'axios' is defined but never used            no-unused-vars
+  Line 60:3:    Duplicate name 'onPresentAddressDataChange'  no-dupe-class-members
+  Line 143:50:  Expected '===' and instead saw '=='          eqeqeq
+  Line 153:50:  Expected '===' and instead saw '=='          eqeqeq
+  Line 242:65:  Expected '===' and instead saw '=='          eqeqeq
+  Line 248:65:  Expected '===' and instead saw '=='          eqeqeq
+  Line 254:65:  Expected '===' and instead saw '=='          eqeqeq
+  Line 260:65:  Expected '===' and instead saw '=='          eqeqeq
+  Line 266:65:  Expected '===' and instead saw '=='          eqeqeq
+  Line 272:65:  Expected '===' and instead saw '=='          eqeqeq
+  Line 278:65:  Expected '===' and instead saw '=='          eqeqeq
+  Line 284:65:  Expected '===' and instead saw '=='          eqeqeq
+
+src/component/employee/PersonalInfoTable.jsx
+  Line 87:9:    Duplicate key 'filter'               no-dupe-keys
+  Line 176:64:  Expected '===' and instead saw '=='  eqeqeq
+
+src/component/employee/WorkExperienceForm.jsx
+  Line 4:8:  'axios' is defined but never used  no-unused-vars
+
+src/component/employee/WorkExperienceFormEdit.jsx
+  Line 5:8:  'axios' is defined but never used  no-unused-vars
+
+src/component/employee/WorkExperienceTable.jsx
+  Line 111:56:  Array.prototype.map() expects a return value from arrow function  array-callback-return
+  Line 132:64:  Expected '===' and instead saw '=='                               eqeqeq
+
+src/component/hr/DashboardHR.jsx
+  Line 5:10:   'Redirect' is defined but never used  no-unused-vars
+  Line 8:8:    'RoleForm' is defined but never used  no-unused-vars
+  Line 87:26:  Expected '===' and instead saw '=='   eqeqeq
+
+src/component/hr/LeaveApplicationHRFormEdit.jsx
+  Line 5:8:     'axios' is defined but never used    no-unused-vars
+  Line 59:64:   Expected '===' and instead saw '=='  eqeqeq
+  Line 67:56:   Expected '===' and instead saw '=='  eqeqeq
+  Line 76:56:   Expected '===' and instead saw '=='  eqeqeq
+  Line 138:61:  Expected '===' and instead saw '=='  eqeqeq
+  Line 144:61:  Expected '===' and instead saw '=='  eqeqeq
+
+src/component/hr/LeaveApplicationHRTable.jsx
+  Line 5:10:    'faPlus' is defined but never used                                no-unused-vars
+  Line 8:10:    'Form' is defined but never used                                  no-unused-vars
+  Line 8:16:    'Button' is defined but never used                                no-unused-vars
+  Line 8:24:    'Col' is defined but never used                                   no-unused-vars
+  Line 8:29:    'Row' is defined but never used                                   no-unused-vars
+  Line 52:9:    Duplicate key 'filter'                                            no-dupe-keys
+  Line 60:9:    Duplicate key 'filter'                                            no-dupe-keys
+  Line 118:45:  Array.prototype.map() expects a return value from arrow function  array-callback-return
+  Line 144:64:  Expected '===' and instead saw '=='                               eqeqeq
+  Line 189:11:  Expected '===' and instead saw '=='                               eqeqeq
+  Line 192:11:  Expected '===' and instead saw '=='                               eqeqeq
+  Line 195:11:  Expected '===' and instead saw '=='                               eqeqeq
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+

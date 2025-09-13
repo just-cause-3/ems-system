@@ -1,0 +1,11 @@
+
+> denji-ems-backend@1.0.0 start
+> node server.js
+
+(node:8834) Warning: Accessing non-existent property 'count' of module exports inside circular dependency
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:8834) Warning: Accessing non-existent property 'findOne' of module exports inside circular dependency
+(node:8834) Warning: Accessing non-existent property 'remove' of module exports inside circular dependency
+(node:8834) Warning: Accessing non-existent property 'updateOne' of module exports inside circular dependency
+Server listening on port 4000
+db connection successful

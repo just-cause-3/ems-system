@@ -15,6 +15,8 @@ import Company from "../Company.jsx";
 import Employee from "../Employee.jsx";
 import Salary from "../Salary.jsx";
 import LeaveApplicationHR from "./LeaveApplicationHR.jsx";
+import Expense from "../Expense.jsx";
+import DashboardCharts from "../DashboardCharts.jsx";
 import NotFound404 from "../NotFound404.jsx";
 
 
@@ -31,6 +33,7 @@ faCity,
 faGlobeAmericas,
 faPlaceOfWorship,
 faArchway,
+faChartLine,
 } from "@fortawesome/free-solid-svg-icons";
 
 function RoleHRF() {
@@ -64,6 +67,14 @@ function SalaryF() {
 }
 function LeaveApplicationHRF() {
   return <LeaveApplicationHR />;
+}
+
+function ExpenseF() {
+  return <Expense />;
+}
+
+function DashboardChartsF() {
+  return <DashboardCharts />;
 }
 
 // function HRPortalF() {
@@ -129,6 +140,18 @@ class DashboardHR extends Component {
                   <Link to="/hr/leave-application-hr">
                     <FontAwesomeIcon icon={faFileAlt} className="sidebar-icon" /> 
                     Leave Application 
+                  </Link> 
+                </li>
+                <li>
+                  <Link to="/hr/expenses">
+                    <FontAwesomeIcon icon={faFileAlt} className="sidebar-icon" /> 
+                    Expenses 
+                  </Link> 
+                </li>
+                <li>
+                  <Link to="/hr/dashboard">
+                    <FontAwesomeIcon icon={faChartLine} className="sidebar-icon" /> 
+                    Dashboard 
                   </Link> 
                 </li>
                 <li>
@@ -200,6 +223,16 @@ class DashboardHR extends Component {
                   path="/hr/salary"
                   exact
                   component={SalaryF}
+                />
+                <Route
+                  path="/hr/expenses"
+                  exact
+                  component={ExpenseF}
+                />
+                <Route
+                  path="/hr/dashboard"
+                  exact
+                  component={DashboardChartsF}
                 />
                 <Route
                   path="/hr/company"

@@ -1,0 +1,21 @@
+.dashboard-charts {
+  padding: 20px;
+}
+
+.charts-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.chart-card {
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-card .card-title {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}

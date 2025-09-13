@@ -2,7 +2,7 @@ import React, { Component } from "react";
 // import "./AdminSalaryTable.css";
 import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus, faTrash, faEdit } from "@fortawesome/free-solid-svg-icons";
+import { faPlus, faTrash, faEdit, faFileDownload } from "@fortawesome/free-solid-svg-icons";
 import { RingLoader } from "react-spinners";
 import { css } from "@emotion/core";
 import { Button } from "react-bootstrap";
@@ -11,6 +11,7 @@ import { Button } from "react-bootstrap";
 import { AgGridReact } from "ag-grid-react";
 import "ag-grid-community/dist/styles/ag-grid.css";
 import "ag-grid-community/dist/styles/ag-theme-balham.css";
+import { generateSalarySlipPDF } from "../utils/pdfGenerator";
 
 
 const override = css`
@@ -28,6 +29,14 @@ class AdminSalaryTable extends Component {
 
 
     columnDefs: [
+      {
+        headerName: "Download",
+        field: "download",
+        sortable: false,
+        filter: false,
+        cellRenderer: "downloadButton",
+        width: 120
+      },
       {
         headerName: "Employee Name",
         field: "EmployeeName",
@@ -185,6 +194,22 @@ class AdminSalaryTable extends Component {
     onClick={() => this.props.onEditSalary(params.data.data)}
   />;
   }
+  renderDownloadButton(params){
+    return <Button
+      variant="outline-primary"
+      size="sm"
+      onClick={() => this.downloadSalarySlip(params.data)}
+    >
+      <FontAwesomeIcon icon={faFileDownload} /> Download PDF
+    </Button>;
+  }
+
+  downloadSalarySlip = (rowData) => {
+    const salaryData = rowData.data.salary[0];
+    const employeeData = rowData.data;
+    const pdf = generateSalarySlipPDF(salaryData, employeeData);
+    pdf.download(`salary-slip-${employeeData.EmployeeID}-${new Date().toISOString().split('T')[0]}.pdf`);
+  };
 
   render() {
     return (
@@ -218,6 +243,9 @@ class AdminSalaryTable extends Component {
               defaultColDef={this.state.defaultColDef}
               columnTypes={this.state.columnTypes}
               rowData={this.state.rowData}
+              frameworkComponents={{
+                downloadButton: this.renderDownloadButton.bind(this)
+              }}
               // floatingFilter={true}
               // onGridReady={this.onGridReady}
               pagination={true}

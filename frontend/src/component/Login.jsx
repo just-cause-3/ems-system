@@ -27,26 +27,26 @@ class Login extends Component {
             </div>
 
             <div id="outer-login-form-div">
-              <form action="" method="" onSubmit={this.props.onSubmit}>
-                {/* <div className="form-group"> */}
-                  <input className="login-form-input"
-                    type="text"
-                    // className="form-control"
+              <form onSubmit={this.props.onSubmit}>
+                  <input 
+                    className="login-form-input"
+                    type="email"
                     placeholder="Email"
-                    required="required"
-                    name="Username"
+                    required
+                    name="Email"
+                    autoComplete="username"
+                    autoFocus
                   />
-                {/* </div> */}
-                {/* <div className="form-group"> */}
-                  <input className="login-form-input"
+                  <input 
+                    className="login-form-input"
                     type="password"
-                    // className="form-control"
                     placeholder="Password"
-                    required="required"
+                    required
+                    name="Password"
+                    autoComplete="current-password"
                   />
-                {/* </div> */}
-                {/* <div className="form-group"> */}
-                  <input className="login-form-input"
+                  <input 
+                    className="login-form-input"
                     type="submit"
                     // className="btn btn-primary btn-block btn-lg btn-mystyle"
                     value="Sign in"

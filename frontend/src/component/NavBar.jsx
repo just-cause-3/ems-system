@@ -3,6 +3,7 @@ import "./NavBar.css";
 import { Navbar, Nav } from "react-bootstrap";
 import Logo from "../img/logo.png";
 import Switch from "react-switch";
+import NotificationBell from "./NotificationBell";
 
 class NavBar extends Component {
   render() {
@@ -43,7 +44,9 @@ class NavBar extends Component {
             
          
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-         
+          <Navbar.Collapse className="justify-content-end">
+            <NotificationBell />
+          </Navbar.Collapse>
           {/* <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
             <a>

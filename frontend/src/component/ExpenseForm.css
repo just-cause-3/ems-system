@@ -1,0 +1,21 @@
+#expense-form-title {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-input {
+  margin-bottom: 15px;
+}
+
+.alert {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}

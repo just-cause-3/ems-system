@@ -16,10 +16,10 @@ services:
   backend:
     build: ./backend
     restart: unless-stopped
+    env_file:
+      - ./backend/.env
     environment:
       - DATABASEURL=mongodb://mongo:27017/ems
-      - JWTKEY=change-this-dev-key
-      - PORT=4000
       - REDIS_URL=redis://redis:6379
     depends_on:
       - mongo
